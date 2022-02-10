@@ -40,3 +40,8 @@ en:
   page_title:
     new_book: New Book
     edit_book: Editing Book
+  message:
+    are_you_sure: Are you sure?
+    create_success: Book was successfully created.
+    update_success: Book was successfully updated.
+    destroy_success: Book was successfully destroyed.
