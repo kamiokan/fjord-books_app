@@ -2,11 +2,12 @@
 
 class BooksController < ApplicationController
   before_action :set_book, only: %i[show edit update destroy]
+  PER_PAGE = 2
 
   # GET /books
   # GET /books.json
   def index
-    @books = Book.order(:id).page(params[:page]).per(2)
+    @books = Book.order(:id).page(params[:page]).per(PER_PAGE)
   end
 
   # GET /books/1
