@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>メールアドレス</th>
+      <th>自己紹介文</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= user.profile %></td>
+        <td><%= link_to t('views.common.show'), user %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @users %>
+
+<br>
+
+<%= link_to "Back", :back %>
