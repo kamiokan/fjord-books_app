@@ -7,7 +7,7 @@
 
 <p>
   <strong><%= User.human_attribute_name(:icon) %>:</strong>
-  <%= image_tag @user.icon if @user.icon.present? %>
+  <%= image_tag @user.icon, class: 'icon_image' if @user.icon.present? %>
 </p>
 
 
