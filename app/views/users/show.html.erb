@@ -1,12 +1,11 @@
-<h1>詳細ページ</h1>
 
-<h3>メールアドレス</h3>
+<h3><%= User.human_attribute_name(:email) %></h3>
 <%= @user.email %>
-<h3>プロフィール</h3>
+<h3><%= User.human_attribute_name(:profile) %></h3>
 <%= @user.profile %>
-<h3>郵便番号</h3>
+<h3><%= User.human_attribute_name(:zipcode) %></h3>
 <%= @user.zipcode %>
-<h3>住所</h3>
+<h3><%= User.human_attribute_name(:address) %></h3>
 <%= @user.address %>
 
 <p>

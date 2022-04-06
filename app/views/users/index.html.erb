@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1>ユーザー一覧</h1>
+<h1><%= User.model_name.human %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>メールアドレス</th>
-      <th>自己紹介文</th>
+      <th><%= User.human_attribute_name(:email) %></th>
+      <th><%= User.human_attribute_name(:profile) %></th>
       <th colspan="2"></th>
     </tr>
   </thead>
